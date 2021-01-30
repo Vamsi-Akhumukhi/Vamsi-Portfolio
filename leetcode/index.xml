@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCodes on My New Hugo Site</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/%20/leetcode/</link>
+    <description>Recent content in LeetCodes on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/%20/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1108. Defanging an IP Address</title>
+      <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/%20/leetcode/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/%20/leetcode/1/</guid>
+      <description>Defanging an IP Address Easy
+ Given a valid (IPv4) IP address, return a defanged version of that IP address. A defanged IP address replaces every period &amp;ldquo;.&amp;rdquo; with &amp;ldquo;[.]&amp;rdquo;.
+ Example 1: Input: address = &amp;quot;1.1.1.1&amp;quot; Output: &amp;quot;1[.]1[.]1[.]1&amp;quot;  class Solution: def defangIPaddr(self, address: str) -&amp;gt; str: return address.replace(&amp;#39;.&amp;#39;, &amp;#39;[.]&amp;#39;) </description>
+    </item>
+    
+  </channel>
+</rss>
