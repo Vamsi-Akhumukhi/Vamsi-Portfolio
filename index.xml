@@ -1,0 +1,33 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>My New Hugo Site</title>
+        <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/</link>
+        <description>Vamsi Akhumukhi</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 11 Jan 2021 00:00:00 &#43;0000</lastBuildDate>
+            <atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Germany&#39;s Dominance in FIFA World Cup using Tableau</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/world-cup-germany/</link>
+    <pubDate>Mon, 11 Jan 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/world-cup-germany/</guid>
+    <description><![CDATA[<p>Nothing is more important than the World Cup in Football(Soccer). I made this viz to show Germany&rsquo;s dominance in Football.</p>]]></description>
+</item><item>
+    <title>Machine Learning Algorithms (SVM, Log Regression and SGD) on Adult Dataset</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/machine-learning-final-project/</link>
+    <pubDate>Sat, 05 Sep 2020 00:58:26 -0400</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/machine-learning-final-project/</guid>
+    <description><![CDATA[<p>The aim of the following Project is to predict whether income of a person exceeds
+$50K/year based on Adult dataset.</p>]]></description>
+</item><item>
+    <title>Cristiano Ronaldo&#39;s Success</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/ronaldo/</link>
+    <pubDate>Thu, 11 Jun 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/ronaldo/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>A boy from Maderia to Madrid. Why ?
+To become the face of football.</p>]]></description>
+</item></channel>
+</rss>
