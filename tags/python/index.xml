@@ -1,16 +1,38 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Python - Tag - My New Hugo Site</title>
+        <title>Python - Tag - Vamsi&#39;s Portfolio</title>
         <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/python/</link>
-        <description>Python - Tag - My New Hugo Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/python/" rel="self" type="application/rss+xml" /><item>
-    <title>1108. Defanging an IP Address</title>
-    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/1/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+        <description>Python - Tag - Vamsi&#39;s Portfolio</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Feb 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>19. Remove Nth Node From End of List</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/remove-nth-last-node-from-linked-list/remove-nth-last-node-from-linked-list/</link>
+    <pubDate>Sat, 20 Feb 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/1/</guid>
-    <description><![CDATA[Defanging an IP Address Easy
- Given a valid (IPv4) IP address, return a defanged version of that IP address. A defanged IP address replaces every period &ldquo;.&rdquo; with &ldquo;[.]&rdquo;.
- Example 1: Input: address = &quot;1.1.1.1&quot; Output: &quot;1[.]1[.]1[.]1&quot;  class Solution: def defangIPaddr(self, address: str) -&gt; str: return address.replace(&#39;.&#39;, &#39;[.]&#39;) ]]></description>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/remove-nth-last-node-from-linked-list/remove-nth-last-node-from-linked-list/</guid>
+    <description><![CDATA[Given the head of a linked list, remove the nth node from the end of the list and return its head.
+  Follow up: Could you do this in one pass?
+ Example 1
+Input: head = [1,2,3,4,5,6], n = 2 Output: [1,2,3,4,6]  Example 2
+Input: head = [2], n = 1 Output: []  Example 3
+Input: head = [1,2,3], n = 1 Output: [1,2]  # Definition for singly-linked list.]]></description>
+</item><item>
+    <title>21. Merge Two Sorted Lists</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/merge-two-sorted-linked-lists/</link>
+    <pubDate>Sat, 20 Feb 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/merge-two-sorted-linked-lists/</guid>
+    <description><![CDATA[Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
+ Example 1
+Input: l1 = [-1,2,4], l2 = [1,3,4] Output: [-1,1,2,3,4,4]  Example 2
+Input: l1 = [-1,4,5,7,8,9,10], l2 = [1,3,4] Output: [-1,1,3,4,4,5,7,8,9,10]  Example 3
+Input: l1 = [], l2 = [1,3,4] Output: [1,3,4]  class Solution: def mergeTwoLists(self, l1: ListNode, l2: ListNode) -&gt; ListNode: dummy = curr = ListNode(0) #current always points to the tail of the list if l1: curr.]]></description>
+</item><item>
+    <title>520. Detect Capital</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/detect-capital/</link>
+    <pubDate>Fri, 19 Feb 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/detect-capital/</guid>
+    <description><![CDATA[Given a word, you need to judge whether the usage of capitals in it is right or not. We define the usage of capitals in a word to be right when one of the following cases holds:
+  All letters in this word are capitals, like &ldquo;AMERICA&rdquo;. All letters in this word are not capitals, like &ldquo;vamsi&rdquo;. Only the first letter in this word is capital, like &ldquo;Predator&rdquo;.  class Solution: def detectCapitalUse(self, word: str) -&gt; bool: return (word[0] == word[0].]]></description>
 </item></channel>
 </rss>
