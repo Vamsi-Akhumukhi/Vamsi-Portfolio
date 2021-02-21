@@ -9,7 +9,9 @@
 
 ![Removing nth node from end in Linked List](https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg)
 
-
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg">
+</p>
 
 **Example 1**
 
