@@ -5,42 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>19. Remove Nth Node From End of List - Vamsi&#39;s Portfolio</title><meta name="Description" content="Vamsi Akhumukhi"><meta property="og:title" content="19. Remove Nth Node From End of List" />
-<meta property="og:description" content="Given the head of a linked list, remove the nth node from the end of the list and return its head.
-  Follow up: Could you do this in one pass?
- Example 1
-Input: head = [1,2,3,4,5,6], n = 2 Output: [1,2,3,4,6]  Example 2
-Input: head = [2], n = 1 Output: []  Example 3
-Input: head = [1,2,3], n = 1 Output: [1,2]  # Definition for singly-linked list." />
+        <title>1047. Remove All Adjacent Duplicates In String - Vamsi&#39;s Portfolio</title><meta name="Description" content="Vamsi Akhumukhi"><meta property="og:title" content="1047. Remove All Adjacent Duplicates In String" />
+<meta property="og:description" content="Description  Given a string s containing only lowercase letters, continuously remove adjacent characters that are the same and return the result.
+ Test cases Example 1
+Input: s = &quot;abbcccccaa&quot; Output: &quot;ca&quot;  Example 2
+Input: s = &quot;abccba&quot; Output: &quot;&quot;  Example 3
+Input: s = &quot;mbccbefddfe&quot; Output: &quot;m&quot;  Solution We start with a result stack, go through all the characters in the string S one by one." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/remove-nth-last-node-from-linked-list/remove-nth-last-node-from-linked-list/" />
+<meta property="og:url" content="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/1047.-remove-all-adjacent-duplicates-in-string/" />
 <meta property="og:image" content="https://vamsi-akhumukhi.github.io/logo.png"/>
-<meta property="article:published_time" content="2021-02-20T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-02-20T00:00:00+00:00" /><meta property="og:site_name" content="Vamsi&#39;s Portfolio" />
+<meta property="article:published_time" content="2021-02-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-28T00:00:00+00:00" /><meta property="og:site_name" content="Vamsi&#39;s Portfolio" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://vamsi-akhumukhi.github.io/logo.png"/>
 
-<meta name="twitter:title" content="19. Remove Nth Node From End of List"/>
-<meta name="twitter:description" content="Given the head of a linked list, remove the nth node from the end of the list and return its head.
-  Follow up: Could you do this in one pass?
- Example 1
-Input: head = [1,2,3,4,5,6], n = 2 Output: [1,2,3,4,6]  Example 2
-Input: head = [2], n = 1 Output: []  Example 3
-Input: head = [1,2,3], n = 1 Output: [1,2]  # Definition for singly-linked list."/>
+<meta name="twitter:title" content="1047. Remove All Adjacent Duplicates In String"/>
+<meta name="twitter:description" content="Description  Given a string s containing only lowercase letters, continuously remove adjacent characters that are the same and return the result.
+ Test cases Example 1
+Input: s = &quot;abbcccccaa&quot; Output: &quot;ca&quot;  Example 2
+Input: s = &quot;abccba&quot; Output: &quot;&quot;  Example 3
+Input: s = &quot;mbccbefddfe&quot; Output: &quot;m&quot;  Solution We start with a result stack, go through all the characters in the string S one by one."/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/apple-touch-icon.png"><link rel="mask-icon" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/site.webmanifest"><link rel="canonical" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/remove-nth-last-node-from-linked-list/remove-nth-last-node-from-linked-list/" /><link rel="prev" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/merge-two-sorted-linked-lists/" /><link rel="next" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/844.-backspace-string-compare/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/apple-touch-icon.png"><link rel="mask-icon" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/site.webmanifest"><link rel="canonical" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/1047.-remove-all-adjacent-duplicates-in-string/" /><link rel="prev" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/844.-backspace-string-compare/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "19. Remove Nth Node From End of List",
+        "headline": "1047. Remove All Adjacent Duplicates In String",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/vamsi-akhumukhi.github.io\/Vamsi-Portfolio\/leetcode\/remove-nth-last-node-from-linked-list\/remove-nth-last-node-from-linked-list\/"
-        },"genre": "Leetcode","keywords": "Python","wordcount":  132 ,
-        "url": "https:\/\/vamsi-akhumukhi.github.io\/Vamsi-Portfolio\/leetcode\/remove-nth-last-node-from-linked-list\/remove-nth-last-node-from-linked-list\/","datePublished": "2021-02-20T00:00:00+00:00","dateModified": "2021-02-20T00:00:00+00:00","publisher": {
+            "@id": "https:\/\/vamsi-akhumukhi.github.io\/Vamsi-Portfolio\/leetcode\/1047.-remove-all-adjacent-duplicates-in-string\/"
+        },"genre": "Leetcode","keywords": "Python, Facebook","wordcount":  138 ,
+        "url": "https:\/\/vamsi-akhumukhi.github.io\/Vamsi-Portfolio\/leetcode\/1047.-remove-all-adjacent-duplicates-in-string\/","datePublished": "2021-02-28T00:00:00+00:00","dateModified": "2021-02-28T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -111,56 +109,42 @@ Input: head = [1,2,3], n = 1 Output: [1,2]  # Definition for singly-linked list.
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">19. Remove Nth Node From End of List</h1><div class="content" id="content"><blockquote>
-<p>Given the head of a linked list, remove the nth node from the end of the list and return its head.</p>
-</blockquote>
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">1047. Remove All Adjacent Duplicates In String</h1><div class="content" id="content"><h2 id="description">Description</h2>
 <blockquote>
-<p><strong>Follow up</strong>: Could you do this in one pass?</p>
+<p>Given a string s containing only lowercase letters, continuously remove adjacent characters that are the same and return the result.</p>
 </blockquote>
-<p><img
-        class="lazyload"
-        src="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/svg/loading.min.svg"
-        data-src="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg"
-        data-srcset="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg, https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg 1.5x, https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg 2x"
-        data-sizes="auto"
-        alt="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg"
-        title="Removing nth node from end in Linked List" /></p>
-<!-- raw HTML omitted -->
+<h2 id="test-cases">Test cases</h2>
 <p><strong>Example 1</strong></p>
-<pre><code>Input: head = [1,2,3,4,5,6], n = 2
-Output: [1,2,3,4,6]
+<pre><code>Input: s = &quot;abbcccccaa&quot;
+Output: &quot;ca&quot;
 </code></pre>
 <p><strong>Example 2</strong></p>
-<pre><code>Input: head = [2], n = 1
-Output: []
+<pre><code>Input: s = &quot;abccba&quot;
+Output: &quot;&quot;
 </code></pre>
 <p><strong>Example 3</strong></p>
-<pre><code>Input: head = [1,2,3], n = 1
-Output: [1,2]
+<pre><code>Input: s = &quot;mbccbefddfe&quot;
+Output: &quot;m&quot;
 </code></pre>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Definition for singly-linked list.</span>
-<span class="c1"># class ListNode:</span>
-<span class="c1">#     def __init__(self, val=0, next=None):</span>
-<span class="c1">#         self.val = val</span>
-<span class="c1">#         self.next = next</span>
-<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">removeNthFromEnd</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">head</span><span class="p">:</span> <span class="n">ListNode</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListNode</span><span class="p">:</span>
+<h2 id="solution">Solution</h2>
+<p>We start with a result stack, go through all the characters in the string S one by one.</p>
+<p>If the current character and the previous character in the result are the same. We pop them as they are adjacent duplicate pair.</p>
+<p>If the next character is different, append it to the end of the result</p>
+<h2 id="code">Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">removeDuplicates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">S</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 
-        <span class="n">fast</span> <span class="o">=</span> <span class="n">slow</span> <span class="o">=</span> <span class="n">head</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">S</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">res</span> <span class="ow">and</span> <span class="n">res</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">char</span><span class="p">:</span>
+                <span class="n">res</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
 
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="n">next</span>
 
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">fast</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span>
-
-        <span class="k">while</span> <span class="n">fast</span><span class="o">.</span><span class="n">next</span><span class="p">:</span>
-            <span class="n">fast</span> <span class="o">=</span> <span class="n">fast</span><span class="o">.</span><span class="n">next</span>
-            <span class="n">slow</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="n">next</span>
-        <span class="n">slow</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">slow</span><span class="o">.</span><span class="n">next</span><span class="o">.</span><span class="n">next</span>
-        <span class="k">return</span> <span class="n">head</span>
-</code></pre></div><p><strong>Time Complexity = O(n)</strong></p>
-<p><strong>Space Complexity = O(1)</strong></p>
+</code></pre></div><p><strong>Time Complexity = O(N)</strong></p>
+<p><strong>Space Complexity = O(N)</strong></p>
 </div></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>

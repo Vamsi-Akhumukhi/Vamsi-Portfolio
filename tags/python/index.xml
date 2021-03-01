@@ -3,7 +3,29 @@
         <title>Python - Tag - Vamsi&#39;s Portfolio</title>
         <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/python/</link>
         <description>Python - Tag - Vamsi&#39;s Portfolio</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 20 Feb 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/python/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 28 Feb 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>1047. Remove All Adjacent Duplicates In String</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/1047.-remove-all-adjacent-duplicates-in-string/</link>
+    <pubDate>Sun, 28 Feb 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/1047.-remove-all-adjacent-duplicates-in-string/</guid>
+    <description><![CDATA[Description  Given a string s containing only lowercase letters, continuously remove adjacent characters that are the same and return the result.
+ Test cases Example 1
+Input: s = &quot;abbcccccaa&quot; Output: &quot;ca&quot;  Example 2
+Input: s = &quot;abccba&quot; Output: &quot;&quot;  Example 3
+Input: s = &quot;mbccbefddfe&quot; Output: &quot;m&quot;  Solution We start with a result stack, go through all the characters in the string S one by one.]]></description>
+</item><item>
+    <title>844. Backspace String Compare</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/844.-backspace-string-compare/</link>
+    <pubDate>Sun, 28 Feb 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/844.-backspace-string-compare/</guid>
+    <description><![CDATA[Given two strings s and t, which represents a sequence of keystrokes, where # denotes a backspace, return whether or not the sequences produce the same result.
+ Example 1
+Input: s = &quot;ABC#&quot;, t = &quot;CD##AB&quot; Output: true  Example 2
+Input: s = &quot;como#pur#ter&quot;, t = &quot;computer&quot; Output: true  Example 3
+Input: &quot;cof#dim#ng&quot;, t = &quot;coding&quot; Output: false  class Solution: def backspaceCompare(self, S: str, T: str) -&gt; bool: def build(S): res = [] for char in S: if char !]]></description>
+</item><item>
     <title>19. Remove Nth Node From End of List</title>
     <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/remove-nth-last-node-from-linked-list/remove-nth-last-node-from-linked-list/</link>
     <pubDate>Sat, 20 Feb 2021 00:00:00 &#43;0000</pubDate>
@@ -16,7 +38,7 @@ Input: head = [1,2,3,4,5,6], n = 2 Output: [1,2,3,4,6]  Example 2
 Input: head = [2], n = 1 Output: []  Example 3
 Input: head = [1,2,3], n = 1 Output: [1,2]  # Definition for singly-linked list.]]></description>
 </item><item>
-    <title>21. Merge Two Sorted Lists</title>
+    <title>21.  Merge Two Sorted Lists</title>
     <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/merge-two-sorted-linked-lists/</link>
     <pubDate>Sat, 20 Feb 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>

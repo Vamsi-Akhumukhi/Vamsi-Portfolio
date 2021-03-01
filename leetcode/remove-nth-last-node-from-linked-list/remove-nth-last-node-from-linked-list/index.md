@@ -6,12 +6,13 @@
 
 
 
-
 ![Removing nth node from end in Linked List](https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg)
 
 <p align="center">
   <img width="460" height="300" src="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/Remove%20nth%20last%20node%20from%20Linked%20List-02.jpg">
 </p>
+
+
 
 **Example 1**
 
@@ -51,7 +52,7 @@ class Solution:
         slow.next = slow.next.next
         return head
 ```
-**Time Complexity = O(m+n), where m and n represents the length of the list L1 and L2 respectively**
+**Time Complexity = O(n)**
 
 **Space Complexity = O(1)**
 
