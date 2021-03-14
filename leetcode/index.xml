@@ -6,7 +6,19 @@
     <description>Recent content in Leetcodes on Vamsi&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>771. Jewels and Stones</title>
+      <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/771.-jewels-and-stones/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/771.-jewels-and-stones/</guid>
+      <description>Description  You&amp;rsquo;re given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+  Letters are case sensitive, so &amp;ldquo;a&amp;rdquo; is considered a different type of stone from &amp;ldquo;A&amp;rdquo;.
+ Test cases Example 1
+Input: jewels = &amp;quot;aA&amp;quot;, stones = &amp;quot;aAAbbbb&amp;quot; Output: 3  Example 2</description>
+    </item>
+    
     <item>
       <title>1047. Remove All Adjacent Duplicates In String</title>
       <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/1047.-remove-all-adjacent-duplicates-in-string/</link>

@@ -3,7 +3,17 @@
         <title>LeetCode - Category - Vamsi&#39;s Portfolio</title>
         <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/categories/leetcode/</link>
         <description>LeetCode - Category - Vamsi&#39;s Portfolio</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 28 Feb 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Mar 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>771. Jewels and Stones</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/771.-jewels-and-stones/</link>
+    <pubDate>Sat, 13 Mar 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/771.-jewels-and-stones/</guid>
+    <description><![CDATA[Description  You&rsquo;re given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+  Letters are case sensitive, so &ldquo;a&rdquo; is considered a different type of stone from &ldquo;A&rdquo;.
+ Test cases Example 1
+Input: jewels = &quot;aA&quot;, stones = &quot;aAAbbbb&quot; Output: 3  Example 2]]></description>
+</item><item>
     <title>1047. Remove All Adjacent Duplicates In String</title>
     <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/1047.-remove-all-adjacent-duplicates-in-string/</link>
     <pubDate>Sun, 28 Feb 2021 00:00:00 &#43;0000</pubDate>
