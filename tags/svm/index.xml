@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SVM - Tag - Vamsi&#39;s Portfolio</title>
+        <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/svm/</link>
+        <description>SVM - Tag - Vamsi&#39;s Portfolio</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 05 Sep 2020 00:58:26 -0400</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/svm/" rel="self" type="application/rss+xml" /><item>
+    <title>Machine Learning Algorithms (SVM, Log Regression and SGD) on Adult Dataset</title>
+    <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/machine-learning-final-project/</link>
+    <pubDate>Sat, 05 Sep 2020 00:58:26 -0400</pubDate>
+    <author>Author</author>
+    <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/machine-learning-final-project/</guid>
+    <description><![CDATA[<p>The aim of the following Project is to predict whether income of a person exceeds
+$50K/year based on Adult dataset.</p>]]></description>
+</item></channel>
+</rss>
