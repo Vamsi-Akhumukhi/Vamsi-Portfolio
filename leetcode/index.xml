@@ -6,7 +6,20 @@
     <description>Recent content in Leetcodes on Vamsi&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>100. Same Tree</title>
+      <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/100.-same-tree/100.-same-tree/</link>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/100.-same-tree/100.-same-tree/</guid>
+      <description>Description  Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+  Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+ Test cases Example 1
+Input: p = [1,2,3] and q = [1,2,3] Output: true  Example 2
+Input: p = [1,2], q = [1,null,2] Output: false  Solution: We need to do recursion to check if two binary trees are structurally identical and nodes has the same value</description>
+    </item>
+    
     <item>
       <title>771. Jewels and Stones</title>
       <link>https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/771.-jewels-and-stones/</link>
