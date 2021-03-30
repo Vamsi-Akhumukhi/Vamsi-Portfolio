@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>100. Same Tree - Vamsi&#39;s Portfolio</title><meta name="Description" content="Vamsi Akhumukhi"><meta property="og:title" content="100. Same Tree" />
+<meta property="og:description" content="Description  Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+  Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+ Test cases Example 1
+Input: p = [1,2,3] and q = [1,2,3] Output: true  Example 2
+Input: p = [1,2], q = [1,null,2] Output: false  Solution: We need to do recursion to check if two binary trees are structurally identical and nodes has the same value" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/100.-same-tree/" />
+<meta property="og:image" content="https://vamsi-akhumukhi.github.io/logo.png"/>
+<meta property="article:published_time" content="2021-03-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-30T00:00:00+00:00" /><meta property="og:site_name" content="Vamsi&#39;s Portfolio" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://vamsi-akhumukhi.github.io/logo.png"/>
+
+<meta name="twitter:title" content="100. Same Tree"/>
+<meta name="twitter:description" content="Description  Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+  Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+ Test cases Example 1
+Input: p = [1,2,3] and q = [1,2,3] Output: true  Example 2
+Input: p = [1,2], q = [1,null,2] Output: false  Solution: We need to do recursion to check if two binary trees are structurally identical and nodes has the same value"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/apple-touch-icon.png"><link rel="mask-icon" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/site.webmanifest"><link rel="canonical" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/100.-same-tree/" /><link rel="prev" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/771.-jewels-and-stones/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "100. Same Tree",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/vamsi-akhumukhi.github.io\/Vamsi-Portfolio\/leetcode\/100.-same-tree\/"
+        },"genre": "Leetcode","keywords": "Python","wordcount":  249 ,
+        "url": "https:\/\/vamsi-akhumukhi.github.io\/Vamsi-Portfolio\/leetcode\/100.-same-tree\/","datePublished": "2021-03-30T00:00:00+00:00","dateModified": "2021-03-30T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Vamsi Akhumukhi"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/" title="Vamsi&#39;s Portfolio">Vamsi Akhumukhi</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/"> Posts </a><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/"> Tags </a><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/categories/"> Categories </a><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/about/"> About </a><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/"> LeetCode </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/" title="Vamsi&#39;s Portfolio">Vamsi Akhumukhi</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/posts/" title="">Posts</a><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/tags/" title="">Tags</a><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/categories/" title="">Categories</a><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/about/" title="">About</a><a class="menu-item" href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/leetcode/" title="">LeetCode</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">100. Same Tree</h1><div class="content" id="content"><h2 id="description">Description</h2>
+<blockquote>
+<p>Given the roots of two binary trees p and q, write a function to check if they are the same or not.</p>
+</blockquote>
+<blockquote>
+<p>Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.</p>
+</blockquote>
+<h2 id="test-cases">Test cases</h2>
+<p><strong>Example 1</strong></p>
+<pre><code>Input: p = [1,2,3] and q = [1,2,3]
+Output: true
+</code></pre>
+<p><strong>Example 2</strong></p>
+<pre><code>Input: p = [1,2], q = [1,null,2]
+Output: false
+</code></pre>
+<h2 id="solution">Solution:</h2>
+<p>We need to do recursion to check if two binary trees are structurally identical and nodes has the same value</p>
+<p>We consider that we are allowed to visit Null nodes.
+P and Q can have 3 cases:</p>
+<ol>
+<li>p exist but q doesn&rsquo;t , return false</li>
+<li>both doesn&rsquo;t exist, i.e both are same. Return true</li>
+<li>if none of the first two conditions meet, we look at children and return True only if values of nodes are equal and if True holds for left and right subtrees.</li>
+</ol>
+<p><figure><a class="lightgallery" href="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20-%202.jpg" title="Default Case" data-thumbnail="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20-%202.jpg" data-sub-html="<h2>Default Case</h2><p>Default Case</p>">
+        <img
+            class="lazyload"
+            src="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/svg/loading.min.svg"
+            data-src="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20-%202.jpg"
+            data-srcset="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20-%202.jpg, https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20-%202.jpg 1.5x, https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20-%202.jpg 2x"
+            data-sizes="auto"
+            alt="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20-%202.jpg" />
+    </a><figcaption class="image-caption">Default Case</figcaption>
+    </figure></p>
+<p><figure><a class="lightgallery" href="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20Edge%20Case.png.jpg" title="Edge Case" data-thumbnail="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20Edge%20Case.png.jpg" data-sub-html="<h2>Edge Case</h2><p>Edge Case</p>">
+        <img
+            class="lazyload"
+            src="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/svg/loading.min.svg"
+            data-src="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20Edge%20Case.png.jpg"
+            data-srcset="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20Edge%20Case.png.jpg, https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20Edge%20Case.png.jpg 1.5x, https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20Edge%20Case.png.jpg 2x"
+            data-sizes="auto"
+            alt="https://raw.githubusercontent.com/Vamsi-Akhumukhi/LeetCode/master/100.%20Same%20Tree/Same%20tree%20Edge%20Case.png.jpg" />
+    </a><figcaption class="image-caption">Edge Case</figcaption>
+    </figure></p>
+<h2 id="code">Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">isSameTree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="c1">#we are allowed to visit the empty nodes</span>
+        <span class="k">if</span> <span class="n">p</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">q</span> <span class="ow">or</span> <span class="n">q</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">p</span><span class="p">:</span>  <span class="c1">#if any one of them is empty</span>
+            <span class="k">return</span> <span class="bp">False</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">p</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">q</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">True</span>
+
+        <span class="n">left</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">isSameTree</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">left</span><span class="p">,</span><span class="n">q</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+        <span class="n">right</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">isSameTree</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">right</span><span class="p">,</span><span class="n">q</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">p</span><span class="o">.</span><span class="n">val</span> <span class="o">==</span> <span class="n">q</span><span class="o">.</span><span class="n">val</span> <span class="ow">and</span> <span class="n">left</span> <span class="ow">and</span> <span class="n">right</span>
+</code></pre></div><p><strong>Time Complexity = O(N), we visit all the nodes in the worst case scenario</strong></p>
+<p><strong>Space Complexity = O(H),H is the height of the tree</strong></p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/" target="_blank">Vamsi Akhumukhi</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":100},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="https://vamsi-akhumukhi.github.io/Vamsi-Portfolio/js/theme.min.js"></script></body>
+</html>
